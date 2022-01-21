@@ -205,12 +205,16 @@ section {
   .product__image {
     float: right;
     width: 65%;
-    margin: 0 -5em 0 0;
+    margin: 0em -5em 0 0;
   }
 }
 
 .card-product .product__description {
   color: var(--clr-light);
+}
+
+.card-product .product__image {
+  max-height: 500px;
 }
 
 .hero {

@@ -196,9 +196,7 @@ section{
         &__image{
             float: right;
             width: 65%; 
-            // shape-outside: url(); //TODO - add image
-            // shape-margin: 1em;
-            margin: 0 -5em 0 0;
+            margin: 0em -5em 0 0;
         }       
     }
 }
@@ -206,6 +204,10 @@ section{
 .card-product{
     .product__description{
         color: var(--clr-light);
+    }
+
+    .product__image{
+        max-height: 500px;
     }
 }
 
