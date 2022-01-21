@@ -67,7 +67,7 @@ section {
   text-transform: uppercase;
   font-size: 1.125rem;
   padding: .5em 1.25em;
-  background: var(--clr-darkorange, orange);
+  background: var(--clr-accent, var(--clr-darkorange));
   border-radius: .25em;
   -webkit-transition: opacity 250ms linear, -webkit-transform 250ms ease-in-out;
   transition: opacity 250ms linear, -webkit-transform 250ms ease-in-out;
@@ -106,7 +106,7 @@ section {
 
 @supports (background-blend-mode: multiply) {
   .hero {
-    background: url(), radial-gradient(var(--clr-lightgrey), var(--clr-dark));
+    background: url(./Images/image1.png), radial-gradient(var(--clr-lightgrey), var(--clr-dark));
     background-blend-mode: multiply;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -171,7 +171,7 @@ section {
 }
 
 .product {
-  background: radial-gradient(var(--clr-inner, limegreen), var(--clr-outer, purple));
+  background: radial-gradient(var(--clr-inner, #f79a6b), var(--clr-outer, #f5793b));
   padding: 3em;
   border-radius: 1em;
   margin-bottom: 5em;
@@ -205,32 +205,28 @@ section {
   .product__image {
     float: right;
     width: 65%;
-    shape-outside: url();
-    shape-margin: 1em;
     margin: 0 -5em 0 0;
-  }
-  .product.shoe-left .product__image {
-    float: left;
-    shape-outside: url();
-    shape-margin: 2em;
-    margin: 0 0 0 -5em;
   }
 }
 
+.card-product .product__description {
+  color: var(--clr-light);
+}
+
 .hero {
-  --clr-accent: #faa700
+  --clr-accent: var(var(var(--clr-darkorange)))
 ;
 }
 
 .pebble-art-product {
-  --clr-inner: #faa700;
-  --clr-outer: #e48d00;
-  --clr-accent: #a1173c;
+  --clr-inner: var(--clr-lightorange);
+  --clr-outer: var(--clr-darkorange);
+  --clr-accent: var(--clr-darkgrey);
 }
 
 .card-product {
-  --clr-inner: #fce4b3;
-  --clr-outer: #eac886;
-  --clr-accent: #2f4858;
+  --clr-inner: var(--clr-darkgrey);
+  --clr-outer: var(--clr-lightgrey);
+  --clr-accent: var(--clr-darkorange);
 }
 /*# sourceMappingURL=style.css.map */
