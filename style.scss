@@ -77,7 +77,7 @@ section{
 
 .primary-title{
     font-size: 4rem;
-    font-size: clamp(3rem, calc(5vw + 1rem), 4.5rem);
+    font-size: clamp(2rem, calc(5vw + 1rem), 4.5rem);
     line-height: 1;
     text-transform: uppercase;
 }
@@ -107,7 +107,7 @@ section{
 }
 
 .hero p{
-    font-size: clamp(1.5rem, calc(1.5vw), 2.5rem);
+    font-size: clamp(1.2rem, calc(1.5vw), 2.5rem);
 }
     
 .featured{
